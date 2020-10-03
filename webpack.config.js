@@ -17,8 +17,20 @@ module.exports = {
         rules: [{
             test: /\.jpeg$/i,
             use: [{
-                loader: 'file-loader'
-            }]
+                    loader: "file-loader",
+                    options: {
+                        name(file) {
+                            return "[path][name].[ext]"
+                        },
+                        publicPath: function(url) {
+                            return url.replace("../", "/assets/")
+                        }
+                    }
+                },
+                {
+                    loader: 'image-webpack-loader'
+                }
+            ]
         }]
     },
     plugins: [
