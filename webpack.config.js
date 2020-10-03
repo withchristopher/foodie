@@ -1,6 +1,6 @@
 const path = require('path');
-const webpack = require('webpack');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const webpack = require("webpack");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
     entry: {
@@ -10,20 +10,20 @@ module.exports = {
         tickets: "./assets/js/tickets.js"
     },
     output: {
-        filename: '[name].bundle.js',
-        path: __dirname + '/dist'
+        filename: "[name].bundle.js",
+        path: __dirname + "/dist"
     },
     module: {
         rules: [{
-            test: /\.jpeg$/i,
+            test: /\.jpg$/,
             use: [{
-                    loader: "file-loader",
+                    loader: 'file-loader',
                     options: {
                         name(file) {
-                            return "[path][name].[ext]"
+                            return '[path][name].[ext]';
                         },
                         publicPath: function(url) {
-                            return url.replace("../", "/assets/")
+                            return url.replace('../', '/assets/');
                         }
                     }
                 },
