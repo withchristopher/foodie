@@ -4,4 +4,4 @@
 The application is live via [https://withchristopher.github.io/foodie/]
 
 # Progressive Web application [PWA]
-
+Application can be installed on a your local machine/ mobile phone.
