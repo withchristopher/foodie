@@ -4,6 +4,7 @@
 The application is live via [https://withchristopher.github.io/foodie/]
 
 # Progressive Web application [PWA]
+<<<<<<< HEAD
 
 ### Description
 
@@ -48,3 +49,6 @@ Build a web application for an upcoming three-day food event. The current app lo
 ```
 
 ![](images/webpack-bundle-analyzer.jpg)
+=======
+Application can be installed on a your local machine/ mobile phone.
+>>>>>>> acd674081977c25bea3eec0c9b64bc1e52261e3a
